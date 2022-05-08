@@ -1,0 +1,31 @@
+﻿#table-column {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: darkmagenta;
+    text-align: center;
+    
+}
+
+p {
+    color: darkred;
+}
+
+#red{
+    background-color: red
+}
+
+#blue{
+    background-color: steelblue
+}
+
+#purple {
+    background-color: darkmagenta;
+}
+
+td{
+    width: 30%;
+}
+
+

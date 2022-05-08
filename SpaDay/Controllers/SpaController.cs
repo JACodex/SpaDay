@@ -28,15 +28,14 @@ namespace SpaDay.Controllers
                     return false;
                 }
             }
-
             return true;
-
         }
 
         public IActionResult Index()
         {
             return View();
         }
+
 
         [HttpPost]
         [Route("/spa")]
@@ -55,9 +54,18 @@ namespace SpaDay.Controllers
                     appropriateFacials.Add(facials[i]);
                 }
             }
+            ViewBag.name = name;
+            ViewBag.FacialsToDisplay = appropriateFacials;
+            ViewBag.SkinType = skintype;
+            ViewBag.Manipedi = manipedi;   
             return View();
         }
+        /********************************** MENU CONTROLLERS **************************************/
 
+        //public IActionResult Menu()
+        //{
+        //    return View();
+        //}
 
     }
 }
