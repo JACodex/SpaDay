@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SpaDay.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -28,7 +29,9 @@ namespace SpaDay.Controllers
                     return false;
                 }
             }
+
             return true;
+
         }
 
         public IActionResult Index()
@@ -54,18 +57,9 @@ namespace SpaDay.Controllers
                     appropriateFacials.Add(facials[i]);
                 }
             }
-            ViewBag.name = name;
-            ViewBag.FacialsToDisplay = appropriateFacials;
-            ViewBag.SkinType = skintype;
-            ViewBag.Manipedi = manipedi;   
             return View();
         }
-        /********************************** MENU CONTROLLERS **************************************/
 
-        //public IActionResult Menu()
-        //{
-        //    return View();
-        //}
 
     }
 }
